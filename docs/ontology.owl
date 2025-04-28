@@ -1,0 +1,747 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/anom/ontologies/2025/3/otir#"
+     xml:base="http://www.semanticweb.org/anom/ontologies/2025/3/otir"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:otir="http://www.semanticweb.org/anom/ontologies/2025/3/otir#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir">
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-04-20</terms:created>
+        <terms:creator>Jorge Quevedo Durán</terms:creator>
+        <terms:title xml:lang="es">OTIR Ontology: Turismo Inteligente y Recomendaciones</terms:title>
+        <rdfs:seeAlso rdf:resource="http://oops.linkeddata.es"/>
+        <owl:versionInfo>0.5</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#lat -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#lat"/>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#long -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#long"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#hasAttraction -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#hasAttraction">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#City"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Attraction"/>
+        <rdfs:comment xml:lang="en">Links a city to its attractions.</rdfs:comment>
+        <rdfs:label>hasAttraction</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#hasHotel -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#hasHotel">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#City"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Hotel"/>
+        <rdfs:comment xml:lang="en">Links a city to its hotels.</rdfs:comment>
+        <rdfs:label>hasHotel</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#hasRestaurant -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#hasRestaurant">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#City"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Restaurant"/>
+        <rdfs:comment xml:lang="en">Links a city to its restaurants.</rdfs:comment>
+        <rdfs:label>hasRestaurant</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#hasReview -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#hasReview">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Attraction"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Event"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Hotel"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Restaurant"/>
+        <rdfs:comment xml:lang="en">Associates an entity with a unique review.</rdfs:comment>
+        <rdfs:label>hasReview</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#hasReviewMeasurement -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#hasReviewMeasurement">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:comment xml:lang="en">Links a review to its measurement details.</rdfs:comment>
+        <rdfs:label>hasReviewMeasurement</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#hostsEvent -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#hostsEvent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#City"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Event"/>
+        <rdfs:comment xml:lang="en">Links a city to its events.</rdfs:comment>
+        <rdfs:label>hostsEvent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#locatedIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#locatedIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Attraction"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Event"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Hotel"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Restaurant"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Transport"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#City"/>
+        <rdfs:comment xml:lang="en">Specifies that this entity is located in the given city.</rdfs:comment>
+        <rdfs:label>locatedIn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#providesTransport -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#providesTransport">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#City"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Transport"/>
+        <rdfs:comment xml:lang="en">Links a city to available transport modes.</rdfs:comment>
+        <rdfs:label>providesTransport</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://schema.org/ratingValue -->
+
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/ratingValue"/>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#averageRating -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#averageRating">
+        <rdfs:subPropertyOf rdf:resource="http://schema.org/ratingValue"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Attraction"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Hotel"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">Average score given by tourists.</rdfs:comment>
+        <rdfs:label>averageRating</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#eventDate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#eventDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment xml:lang="en">Date when the event occurs.</rdfs:comment>
+        <rdfs:label>eventDate</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#eventType -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#eventType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Category of the event.</rdfs:comment>
+        <rdfs:label>eventType</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#hasDate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#hasDate">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment xml:lang="en">Date of the measurement.</rdfs:comment>
+        <rdfs:label>hasDate</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#hasValue -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#hasValue">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">Numeric measurement value.</rdfs:comment>
+        <rdfs:label>hasValue</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#pricePerNight -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#pricePerNight">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Hotel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">Cost per night in local currency.</rdfs:comment>
+        <rdfs:label>pricePerNight</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#starRating -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#starRating">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Hotel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">Number of stars of a hotel.</rdfs:comment>
+        <rdfs:label>starRating</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#Amusement_Type -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Amusement_Type">
+        <rdfs:label>Amusement_Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#Andalusian -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Andalusian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Restaurant_Type"/>
+        <rdfs:label>Andalusian</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#Attraction -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Attraction">
+        <rdfs:comment xml:lang="en">Point of interest for visitors.</rdfs:comment>
+        <rdfs:label>Attraction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#Beach -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Beach">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Amusement_Type"/>
+        <rdfs:label>Beach</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#Bicycle -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Bicycle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Transport_Type"/>
+        <rdfs:label>Bicycle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#Bus -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Bus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Transport_Type"/>
+        <rdfs:label>Bus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#Business -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Business">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Hotel_Type"/>
+        <rdfs:label>Business</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#City -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#City">
+        <rdfs:comment xml:lang="en">Urban area such as a municipality or town.</rdfs:comment>
+        <rdfs:label>City</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#Cultural -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Cultural">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Event_Type"/>
+        <rdfs:label>Cultural</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#Event -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Event">
+        <rdfs:comment xml:lang="en">Scheduled occurrence such as festival or exhibition.</rdfs:comment>
+        <rdfs:label>Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#Event_Type -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Event_Type">
+        <rdfs:label>Event_Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#Hotel -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Hotel">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#locatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#starRating"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Accommodation establishment offering lodging services.</rdfs:comment>
+        <rdfs:label>Hotel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#Hotel_Type -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Hotel_Type">
+        <rdfs:label>Hotel_Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#Italian -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Italian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Restaurant_Type"/>
+        <rdfs:label>Italian</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#Japanese -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Japanese">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Restaurant_Type"/>
+        <rdfs:label>Japanese</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#Luxury -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Luxury">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Hotel_Type"/>
+        <rdfs:label>Luxury</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#Mediterranean -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Mediterranean">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Restaurant_Type"/>
+        <rdfs:label>Mediterranean</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#Metro -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Metro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Transport_Type"/>
+        <rdfs:label>Metro</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#Mexican -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Mexican">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Restaurant_Type"/>
+        <rdfs:label>Mexican</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#Monument -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Monument">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Amusement_Type"/>
+        <rdfs:label>Monument</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#Museum -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Museum">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Amusement_Type"/>
+        <rdfs:label>Museum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#Music -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Music">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Event_Type"/>
+        <rdfs:label>Music</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#Park -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Park">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Amusement_Type"/>
+        <rdfs:label>Park</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#Restaurant -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Restaurant">
+        <rdfs:comment xml:lang="en">Establishment offering food and beverage services.</rdfs:comment>
+        <rdfs:label>Restaurant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#Restaurant_Type -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Restaurant_Type">
+        <rdfs:label>Restaurant_Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#Rural -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Rural">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Hotel_Type"/>
+        <rdfs:label>Rural</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#Sport -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Sport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Event_Type"/>
+        <rdfs:label>Sport</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#Taxi -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Taxi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Transport_Type"/>
+        <rdfs:label>Taxi</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#Tech -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Tech">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Event_Type"/>
+        <rdfs:label>Tech</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#Touristic -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Touristic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Hotel_Type"/>
+        <rdfs:label>Touristic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#Tram -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Tram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Transport_Type"/>
+        <rdfs:label>Tram</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#Transport -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Transport">
+        <rdfs:comment xml:lang="en">Means of transportation available in a city.</rdfs:comment>
+        <rdfs:label>Transport</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#Transport_Type -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Transport_Type">
+        <rdfs:label>Transport_Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#CongresoSanSebastian -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#CongresoSanSebastian">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Event"/>
+        <locatedIn rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#SanSebastian"/>
+        <eventDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-06-04</eventDate>
+        <eventType>Music</eventType>
+        <rdfs:label>Congreso San Sebastián</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#HotelRoyalSanSebastian -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#HotelRoyalSanSebastian">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Hotel"/>
+        <locatedIn rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#SanSebastian"/>
+        <averageRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.4</averageRating>
+        <pricePerNight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">245</pricePerNight>
+        <starRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</starRating>
+        <rdfs:label>Hotel Royal San Sebastián</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#ParqueSanSebastian -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#ParqueSanSebastian">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Attraction"/>
+        <locatedIn rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#SanSebastian"/>
+        <averageRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.9</averageRating>
+        <rdfs:label>Parque San Sebastián</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#RestauranteTradicionSanSebastian -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#RestauranteTradicionSanSebastian">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Restaurant"/>
+        <locatedIn rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#SanSebastian"/>
+        <averageRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</averageRating>
+        <rdfs:label>Restaurante Tradición San Sebastián</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#SanSebastian -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#SanSebastian">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#City"/>
+        <rdfs:label xml:lang="es">San Sebastián</rdfs:label>
+        <wgs84_pos:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#float">43.3183</wgs84_pos:lat>
+        <wgs84_pos:long rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-1.9812</wgs84_pos:long>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anom/ontologies/2025/3/otir#TaxiSanSebastian -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anom/ontologies/2025/3/otir#TaxiSanSebastian">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#Taxi"/>
+        <locatedIn rdf:resource="http://www.semanticweb.org/anom/ontologies/2025/3/otir#SanSebastian"/>
+        <rdfs:label>Taxi San Sebastián</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
