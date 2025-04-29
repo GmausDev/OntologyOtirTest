@@ -1,0 +1,1139 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "es", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://schema.org", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://www.semanticweb.org/anom/ontologies/2025/3/otir" ],
+    "title" : {
+      "es" : "OTIR Ontology: Turismo Inteligente y Recomendaciones"
+    },
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "version" : "0.5",
+    "author" : [ "Jorge Quevedo Durán" ],
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Jorge Quevedo Durán",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2025-04-20",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.5",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "es",
+        "value" : "OTIR Ontology: Turismo Inteligente y Recomendaciones",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://oops.linkeddata.es",
+        "type" : "iri"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "15",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#Transport",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Transport",
+      "undefined" : "Transport"
+    },
+    "comment" : {
+      "en" : "Means of transportation available in a city."
+    },
+    "id" : "0"
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#Japanese",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Japanese",
+      "undefined" : "Japanese"
+    },
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#Luxury",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Luxury",
+      "undefined" : "Luxury"
+    },
+    "id" : "3",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#Business",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Business",
+      "undefined" : "Business"
+    },
+    "id" : "17",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#Touristic",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Touristic",
+      "undefined" : "Touristic"
+    },
+    "id" : "18",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#Bus",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Bus",
+      "undefined" : "Bus"
+    },
+    "id" : "19",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#Andalusian",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Andalusian",
+      "undefined" : "Andalusian"
+    },
+    "id" : "21",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#Hotel_Type",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Hotel_Type",
+      "undefined" : "Hotel_Type"
+    },
+    "subClasses" : [ "3", "22", "17", "18" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#Event",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event",
+      "undefined" : "Event"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#CongresoSanSebastian",
+      "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+      "labels" : {
+        "IRI-based" : "CongresoSanSebastian",
+        "undefined" : "Congreso San Sebastián"
+      }
+    } ],
+    "comment" : {
+      "en" : "Scheduled occurrence such as festival or exhibition."
+    },
+    "id" : "7"
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#Restaurant",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Restaurant",
+      "undefined" : "Restaurant"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#RestauranteTradicionSanSebastian",
+      "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+      "labels" : {
+        "IRI-based" : "RestauranteTradicionSanSebastian",
+        "undefined" : "Restaurante Tradición San Sebastián"
+      }
+    } ],
+    "comment" : {
+      "en" : "Establishment offering food and beverage services."
+    },
+    "id" : "47"
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#Italian",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Italian",
+      "undefined" : "Italian"
+    },
+    "id" : "51",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#Mediterranean",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Mediterranean",
+      "undefined" : "Mediterranean"
+    },
+    "id" : "52",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#Mexican",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Mexican",
+      "undefined" : "Mexican"
+    },
+    "id" : "56",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#Amusement_Type",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Amusement_Type",
+      "undefined" : "Amusement_Type"
+    },
+    "subClasses" : [ "57", "58", "39", "35" ],
+    "id" : "36"
+  }, {
+    "instances" : 0,
+    "union" : [ "7", "47", "63", "49" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#Attraction",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Attraction",
+      "undefined" : "Attraction"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#ParqueSanSebastian",
+      "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+      "labels" : {
+        "IRI-based" : "ParqueSanSebastian",
+        "undefined" : "Parque San Sebastián"
+      }
+    } ],
+    "comment" : {
+      "en" : "Point of interest for visitors."
+    },
+    "id" : "63"
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#Transport_Type",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Transport_Type",
+      "undefined" : "Transport_Type"
+    },
+    "subClasses" : [ "46", "44", "30", "28", "19" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "42",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#Event_Type",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event_Type",
+      "undefined" : "Event_Type"
+    },
+    "subClasses" : [ "32", "26", "24", "9" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#Tram",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Tram",
+      "undefined" : "Tram"
+    },
+    "id" : "28",
+    "superClasses" : [ "20" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "47", "63", "49" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "12"
+  }, {
+    "instances" : 0,
+    "union" : [ "0", "7", "47", "63", "49" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#Cultural",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Cultural",
+      "undefined" : "Cultural"
+    },
+    "id" : "32",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#Restaurant_Type",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Restaurant_Type",
+      "undefined" : "Restaurant_Type"
+    },
+    "subClasses" : [ "21", "1", "56", "51", "52" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#Taxi",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Taxi",
+      "undefined" : "Taxi"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#TaxiSanSebastian",
+      "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+      "labels" : {
+        "IRI-based" : "TaxiSanSebastian",
+        "undefined" : "Taxi San Sebastián"
+      }
+    } ],
+    "id" : "46",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#Music",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Music",
+      "undefined" : "Music"
+    },
+    "id" : "26",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#Metro",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Metro",
+      "undefined" : "Metro"
+    },
+    "id" : "44",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "70",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#Sport",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sport",
+      "undefined" : "Sport"
+    },
+    "id" : "24",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "68",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#Tech",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Tech",
+      "undefined" : "Tech"
+    },
+    "id" : "9",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "55",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "71",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "73",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "50",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "15",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "16",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#Bicycle",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Bicycle",
+      "undefined" : "Bicycle"
+    },
+    "id" : "30",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#Rural",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Rural",
+      "undefined" : "Rural"
+    },
+    "id" : "22",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#Monument",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Monument",
+      "undefined" : "Monument"
+    },
+    "id" : "35",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#Beach",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Beach",
+      "undefined" : "Beach"
+    },
+    "id" : "39",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#Hotel",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Hotel",
+      "undefined" : "Hotel"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#HotelRoyalSanSebastian",
+      "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+      "labels" : {
+        "IRI-based" : "HotelRoyalSanSebastian",
+        "undefined" : "Hotel Royal San Sebastián"
+      }
+    } ],
+    "comment" : {
+      "en" : "Accommodation establishment offering lodging services."
+    },
+    "id" : "49"
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#Park",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Park",
+      "undefined" : "Park"
+    },
+    "id" : "57",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#Museum",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Museum",
+      "undefined" : "Museum"
+    },
+    "id" : "58",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#City",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "City",
+      "undefined" : "City"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#SanSebastian",
+      "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+      "annotations" : {
+        "long" : [ {
+          "identifier" : "long",
+          "language" : "undefined",
+          "value" : "-1.9812",
+          "type" : "label"
+        } ],
+        "lat" : [ {
+          "identifier" : "lat",
+          "language" : "undefined",
+          "value" : "43.3183",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SanSebastian",
+        "es" : "San Sebastián"
+      }
+    } ],
+    "comment" : {
+      "en" : "Urban area such as a municipality or town."
+    },
+    "id" : "6"
+  } ],
+  "property" : [ {
+    "id" : "5",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "11",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "48",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "67",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "75",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "77",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "78",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#hostsEvent",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hostsEvent",
+      "undefined" : "hostsEvent"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Links a city to its events."
+    },
+    "attributes" : [ "object" ],
+    "id" : "5"
+  }, {
+    "range" : "10",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#averageRating",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "averageRating",
+      "undefined" : "averageRating"
+    },
+    "domain" : "12",
+    "comment" : {
+      "en" : "Average score given by tourists."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://schema.org/ratingValue",
+    "baseIri" : "http://schema.org",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "ratingValue"
+    },
+    "domain" : "15",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "14"
+  }, {
+    "range" : "10",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "23"
+  }, {
+    "range" : "10",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "25"
+  }, {
+    "range" : "20",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "27"
+  }, {
+    "range" : "20",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "29"
+  }, {
+    "range" : "10",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "31"
+  }, {
+    "range" : "20",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "33"
+  }, {
+    "range" : "36",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#hasReviewMeasurement",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "hasReviewMeasurement",
+      "undefined" : "hasReviewMeasurement"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "Links a review to its measurement details."
+    },
+    "attributes" : [ "inverse functional", "object" ],
+    "id" : "37"
+  }, {
+    "range" : "36",
+    "domain" : "39",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#hasReview",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "hasReview",
+      "undefined" : "hasReview"
+    },
+    "domain" : "41",
+    "comment" : {
+      "en" : "Associates an entity with a unique review."
+    },
+    "attributes" : [ "inverse functional", "object" ],
+    "id" : "40"
+  }, {
+    "range" : "20",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "43"
+  }, {
+    "range" : "20",
+    "domain" : "46",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#starRating",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "starRating",
+      "undefined" : "starRating"
+    },
+    "cardinality" : "1",
+    "domain" : "49",
+    "comment" : {
+      "en" : "Number of stars of a hotel."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#hasRestaurant",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "hasRestaurant",
+      "undefined" : "hasRestaurant"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Links a city to its restaurants."
+    },
+    "attributes" : [ "object" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#hasDate",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "range" : "55",
+    "label" : {
+      "IRI-based" : "hasDate",
+      "undefined" : "hasDate"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "Date of the measurement."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "54"
+  }, {
+    "range" : "36",
+    "domain" : "57",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "59"
+  }, {
+    "range" : "4",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "60"
+  }, {
+    "range" : "36",
+    "domain" : "58",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "61"
+  }, {
+    "range" : "4",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "62"
+  }, {
+    "range" : "4",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "64"
+  }, {
+    "range" : "4",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#eventType",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "range" : "68",
+    "label" : {
+      "IRI-based" : "eventType",
+      "undefined" : "eventType"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Category of the event."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#hasHotel",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "hasHotel",
+      "undefined" : "hasHotel"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Links a city to its hotels."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#eventDate",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "range" : "70",
+    "label" : {
+      "IRI-based" : "eventDate",
+      "undefined" : "eventDate"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Date when the event occurs."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#pricePerNight",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "range" : "73",
+    "label" : {
+      "IRI-based" : "pricePerNight",
+      "undefined" : "pricePerNight"
+    },
+    "domain" : "49",
+    "comment" : {
+      "en" : "Cost per night in local currency."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#providesTransport",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "providesTransport",
+      "undefined" : "providesTransport"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Links a city to available transport modes."
+    },
+    "attributes" : [ "object" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#locatedIn",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "locatedIn",
+      "undefined" : "locatedIn"
+    },
+    "domain" : "49",
+    "comment" : {
+      "en" : "Specifies that this entity is located in the given city."
+    },
+    "attributes" : [ "someValues", "transitive", "object" ],
+    "id" : "76"
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#hasValue",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "range" : "71",
+    "label" : {
+      "IRI-based" : "hasValue",
+      "undefined" : "hasValue"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "Numeric measurement value."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "77"
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#locatedIn",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "locatedIn",
+      "undefined" : "locatedIn"
+    },
+    "domain" : "66",
+    "comment" : {
+      "en" : "Specifies that this entity is located in the given city."
+    },
+    "attributes" : [ "transitive", "object" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir#hasAttraction",
+    "baseIri" : "http://www.semanticweb.org/anom/ontologies/2025/3/otir",
+    "range" : "63",
+    "label" : {
+      "IRI-based" : "hasAttraction",
+      "undefined" : "hasAttraction"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Links a city to its attractions."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "79"
+  }, {
+    "range" : "2",
+    "domain" : "52",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "80"
+  }, {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "81"
+  }, {
+    "range" : "2",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "82"
+  }, {
+    "range" : "2",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "83"
+  }, {
+    "range" : "2",
+    "domain" : "56",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "84"
+  } ]
+}
